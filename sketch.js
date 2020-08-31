@@ -43,20 +43,20 @@ function setup() {
   player = createSprite(100, 525, 30, 60);
   player.addAnimation("running",playerNormalIMG);
   wall1 = createSprite(10, 325, 20, 675);
-  wall2 = createSprite(1350, 405, 80, 605);
-  tree = createSprite(1400, 405, 20, 500);
+  wall2 = createSprite(1400, 405, 80, 605);
+  tree = createSprite(1350, 405, 20, 500);
   tree.scale = 6;
   branch4 = createSprite(1410, 120, 60, 20)
   mushroomImg = createSprite(1100, 500, 20, 20);
   mushroom = createSprite(1090, 510, 20, 20);
-  branch1 = createSprite(1200, 500, 120, 20);
-  branch1.rotation = 150;
-  branch2 = createSprite(1240, 320, 150, 20);
-  branch2da2 = createSprite(1160, 340, 20,  50)
+  
+  
+  branch2 = createSprite(1280, 320, 150, 20);
+  branch2da2 = createSprite(1190, 340, 20,  50)
   branch2.rotation = 160;
-  branch3 = createSprite(1250, 220, 120, 20);
+  branch3 = createSprite(1290, 200, 120, 20);
   branch3.rotation = 170;
-  branch3da3 = createSprite(1200, 220, 15, 30)
+  branch3da3 = createSprite(1220, 200, 15, 30)
   part4 = createSprite(1580, 505, 140, 20)
   part4.scale = 0.4;
   b1 = createSprite(1790, 540, 20, 250)
@@ -179,13 +179,12 @@ function draw() {
 
   
   mushroom.visible = false;
-  branch1.visible = false;
-  branch2da2.visible = false;
-  branch2.visible = false;
-  branch3.visible = false;
-  branch3da3.visible = false;
-  branch4.visible = false;
-  wall2.visible = false;
+  branch2da2.visible = true;
+  branch2.visible = true;
+  branch3.visible = true;
+  branch3da3.visible = true;
+  branch4.visible = true;
+  wall2.visible = true;
  
   
 
@@ -247,7 +246,6 @@ function draw() {
   player.collide(part2);
   player.collide(part3);
   player.collide(mushroom);
-  player.collide(branch1)
   player.collide(branch2)
   player.collide(branch2da2);
   player.collide(branch3);
