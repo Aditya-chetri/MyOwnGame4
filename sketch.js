@@ -179,12 +179,12 @@ function draw() {
 
   
   mushroom.visible = false;
-  branch2da2.visible = true;
-  branch2.visible = true;
-  branch3.visible = true;
-  branch3da3.visible = true;
-  branch4.visible = true;
-  wall2.visible = true;
+  branch2da2.visible = false;
+  branch2.visible = false;
+  branch3.visible = false;
+  branch3da3.visible = false;
+  branch4.visible = false;
+  wall2.visible = false;
  
   
 
